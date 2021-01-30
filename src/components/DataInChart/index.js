@@ -29,8 +29,14 @@ const DataInChart = ({
             },
             labels: {
                 formatter: function () {
-                    return this.value + '°';
+                    return this.value + '°C';
                 }
+            }
+        },
+        tooltip: {
+            formatter: function () {
+                return  this.x +
+                '</b>  <b>' + this.y + '°C' + '</b>'
             }
         },
         series: chartData
