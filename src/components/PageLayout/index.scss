@@ -1,0 +1,25 @@
+.pagelayout {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1600px) {
+    .pagelayout{
+        width: 75%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .pagelayout{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .pagelayout{
+        max-width: 100%;
+    }
+    
+}

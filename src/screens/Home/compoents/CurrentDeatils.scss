@@ -1,0 +1,119 @@
+.current {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    border-radius: 8px;
+    box-shadow: 0 0 7.68px 0.32px rgba(0,0,0,.25);
+
+}
+.current-details{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+
+    &__graph-section{
+        margin-right: 20px;
+        &__title{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &__deatils{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        vertical-align: middle;
+        flex-direction: column;
+    }
+
+    .pressure{
+        margin-bottom: 30px;
+        padding: 10px 30px;
+        font-size: 20px;
+        background: lightblue;
+
+        div {
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .humidity{
+        font-size: 20px;
+        padding: 10px 30px;
+        background: lightblue;
+        div {
+            &:first-child {
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    @media screen  and (max-width:500px){
+        display: block;
+
+        &__graph-section{
+            margin-bottom: 30px;
+
+            &__title {
+                margin-bottom: 30px;
+            }
+        }
+        
+    }
+    .temp {
+        font-size: 24px;
+        font-weight: 700;
+    }
+    
+}
+.weather{
+    text-align: left;
+}
+.weather-img {
+    width: 100%;
+}
+.sunset-img {
+    width: 100%;
+}
+.current-details-sunrise {
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+
+    .details-sunrise {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    .sunrise-sunset{
+        // margin-left: 20px;
+        width: 130px;
+        background: lightblue;
+        padding: 10px 30px;
+        font-size: 20px;
+        &:first-child {
+            margin-bottom: 30px;
+        }
+            span {
+                display: block;
+            }
+    }
+
+    @media screen and (max-width: 500px){
+        display: block;
+
+        .sunrise-sunset {
+            width: 100%;
+        }
+    }
+}

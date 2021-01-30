@@ -1,0 +1,49 @@
+.zip-code-search{
+    width: 500px;
+    margin: 0 auto;
+    padding: 14px 10px;
+    vertical-align: middle;
+    box-shadow: 0 0 7.68px 0.32px rgba(0,0,0,.25);
+
+    &__content{
+        display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    .zip-label {
+        display: block;
+        text-align: left;
+    }
+
+    }
+
+    .error-msg {
+        padding-top: 10px;
+        font-size: 15px;
+        color: red;
+    }
+
+    .search-btn {
+        padding: 7px 15px;
+        background-color: deepskyblue;
+        color: #ffffff;
+        border: deepskyblue;
+    }
+    
+}
+
+@media screen and (max-width: 500px){
+    .zip-code-search {
+        width: 100%;
+
+        &__content{
+            align-items: flex-end;
+        }
+        
+        input {
+            width: 200px;
+        }
+    }
+
+    
+}

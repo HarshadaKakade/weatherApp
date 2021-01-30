@@ -1,0 +1,81 @@
+.week-days {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+
+    @media screen and (max-width: 768px) {
+        justify-content: space-evenly;
+    }
+
+    
+
+    .days{
+        padding: 10px;
+        box-shadow: 0 0 7.68px 0.32px rgba(0,0,0,.25);
+        .day-name{
+            display: block;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .temp{
+            padding-bottom: 5px;
+            span {
+                &:first-child {
+                    margin-right: 5px;
+                }
+                @media screen and(max-width:500px) {
+                    &:first-child {
+                        margin-right: 2px;
+                    }
+                }
+            }
+        }
+        .temp-img{
+            padding-bottom: 5px;
+        }
+        .weather-name{
+            padding-bottom: 5px;
+        }
+
+        @media screen and (max-width: 500px){
+            padding: 4px;
+            font-size: 12px;
+        }
+
+    }
+    .active{
+        border: 1px solid blue;
+    }
+}
+
+.more-less-details {
+    text-align: right;
+    color: deepskyblue;
+    cursor: pointer;
+}
+
+.current-title {
+    margin: 20px 0px 10px;  
+    text-align: left;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: 700;
+    @media screen and(max-width: 600px) {
+        font-size: 30px;
+    }
+}
+
+.current-weather-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 770px) {
+        flex-direction: column;
+        align-items: flex-start;
+        text-transform: capitalize;
+        margin-bottom: 0px;
+    }
+}
