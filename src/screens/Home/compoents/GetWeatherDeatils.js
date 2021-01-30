@@ -3,7 +3,6 @@ import { onWeatherDeatilsLoaded, onCityNotFound } from '../store/dispatcher';
 
 
 const GetWeatherDetails = ({
-    cityName,
     onCityNotFound,
     zipCode = "10001",
     onWeatherDeatilsLoaded
@@ -11,7 +10,6 @@ const GetWeatherDetails = ({
 
     const countyCode = zipCode.length === 6 ? 'IN' : zipCode.length === 5 ? 'US' : 'US';
 
-    // const _request = `https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&units=metric&appid=651a45b15264bc21e6fe79689eede235`;
     const _request1 = `https://api.openweathermap.org/data/2.5/forecast?zip=${zipCode},${countyCode}&units=metric&appid=651a45b15264bc21e6fe79689eede235`;
 
     fetch(_request1)

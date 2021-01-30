@@ -14,23 +14,11 @@ const Home = ({
     showErrorMsg,
 }) => {
 
-    // useEffect(
-    //     _ => {
-    //         if (!cityName) {
-    //             fetch('http://ip-api.com/json')
-    //                 .then(response => response.json())
-    //                 .then(response => {
-    //                     let currentCityName = `${response.city}, ${response.regionName}`;
-    //                     console.log("currentCityName", currentCityName)
-    //                     onAddCurrentCityName(currentCityName)
-    //                 })
-    //         }
-    //     }, [cityName]);
 
     return (
 
         <div>
-            {/* <Customserach /> */}
+            
             <ZipCodeSearch />
             {
                 loadingData === false && loadedData === false ?
