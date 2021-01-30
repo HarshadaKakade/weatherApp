@@ -6,13 +6,6 @@ const defaultState = {
     weatherData: [],
     currentCityDetails: {},
     currentDeatils: {},
-    cityNames: [
-        "thane, maharashtra",
-        "nagpur, maharashtra",
-        "solapur, maharashtra",
-        "nashik, maharashtra",
-        "new york, usa"],
-    cityName: "",
     zipCode: '10001',
     chartData: [],
     showErrorMsg: false
