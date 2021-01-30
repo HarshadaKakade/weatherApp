@@ -26,6 +26,11 @@ const DataInChart = ({
         yAxis: {
             title: {
                 text: ''
+            },
+            labels: {
+                formatter: function () {
+                    return this.value + '°';
+                }
             }
         },
         series: chartData
